@@ -80,9 +80,9 @@ namespace ModelBindingStyling_Lab.Controllers
             {
                 DateOfBirth = new DateOnly(1815, 7, 1),
                 Email = "First.Programmer@gmail.com",
-                FullName = "Ada Lovelace",
+                FullName = "Jamie Honey",
                 GitHubUrl = "https://github.com/Octocat",
-                ImageUrl = "https://via.placeholder.com/150",
+                ImageUrl = "https://placehold.co/600x400",
                 PhoneNumber = "(253) 555-1234",
                 UserProfileId = 10,
                 SkilledLanguages = new List<string> { "C#", "Java", "C++" }
