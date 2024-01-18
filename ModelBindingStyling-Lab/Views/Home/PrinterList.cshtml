@@ -3,49 +3,71 @@
 @{
     ViewData["Title"] = "Printer List";
 }
+<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width,  
+        initial-scale=1, shrink-to-fit=no"> 
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity= 
+"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"> 
+  
+    <link rel="stylesheet" href= 
+"https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity= 
+"sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+         crossorigin="anonymous"> 
 
-<h1>PrinterList</h1>
+<h1>Available Printers</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.SKU)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BuildVolume)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PrinterImage)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.SKU)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BuildVolume)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrinterImage)
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="https://via.placeholder.com/300">
+                    <h5 class="Title">The mini printer</h5>
+                    <p class="card-text">SMLPRINTER7</p>
+                    <p class="card-text">Build Volume: 180 x 180 x 180 mm</p>
+                    <p class="card-text">$499.99</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+            
+        <div class="col-lg-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="https://via.placeholder.com/300">
+                    <h5 class="Title">Mega Printer</h5>
+                    <p class="card-text">MEDPRINTER12</p>
+                    <p class="card-text">Build Volume: 300 x 300 x 300 mm</p>
+                    <p class="card-text">$899.99</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="https://via.placeholder.com/300">
+                    <h5 class="Title">Mega Printer Plus</h5>
+                    <p class="card-text">MEDPRINTER12P</p>
+                    <p class="card-text">Build Volume: 360 x 360 x 360 mm</p>
+                    <p class="card-text">$499.99</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://via.placeholder.com/300" class="card-img-top" alt="https://via.placeholder.com/300">
+                    <h5 class="Title">Mega Printer Extreme</h5>
+                    <p class="card-text">GIGANTOR10</p>
+                    <p class="card-text">Build Volume: 360 x 360 x 500 mm</p>
+                    <p class="card-text">$899.99</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
