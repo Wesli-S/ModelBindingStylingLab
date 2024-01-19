@@ -6,54 +6,65 @@
 
 <h1>Profile Page</h1>
 
-<div>
-    <h4>UserProfile</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserProfileId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Model.UserProfileId
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FullName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Model.FullName
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Model.Email
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhoneNumber)
-        </dt>
-        <dd class = "col-sm-10">
-            @Model.PhoneNumber
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImageUrl)
-        </dt>
-        <dd class = "col-sm-10">
-            <img src="@Model.ImageUrl" />
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.GitHubUrl)
-        </dt>
-        <dd class = "col-sm-10">
-            <a target="_blank" href="@Model.GitHubUrl">Go To Github Profile</a>
-        </dd>
-        <dt>Skilled Languages</dt>
-        <dd>
-            <ul>
-                @foreach(string languageSkill in Model.SkilledLanguages)
-                {
-                    <li>@languageSkill</li>
-                }
-            </ul>
-        </dd>
-    </dl>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                UserProfile #1
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <dl class="row">
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.UserProfileId)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.UserProfileId
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.FullName)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.FullName
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.Email
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.PhoneNumber)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Model.PhoneNumber
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.ImageUrl)
+                    </dt>
+                    <dd class="col-sm-10">
+                        <img src="@Model.ImageUrl" />
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.GitHubUrl)
+                    </dt>
+                    <dd class="col-sm-10">
+                        <a target="_blank" href="@Model.GitHubUrl">Go To Github Profile</a>
+                    </dd>
+                    <dt>Skilled Languages</dt>
+                    <dd>
+                        <ul>
+                            @foreach (string languageSkill in Model.SkilledLanguages)
+                            {
+                                <li>@languageSkill</li>
+                            }
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
 </div>
+
+
