@@ -3,3 +3,5 @@ Starter code for lab activity. Your task is to change the UserProfile page and 3
 use custom CSS or a framework like Bootstrap
 
 3d Printer List Styling: Using cards and containers, I replaced the table that was previously on the 3D printer page and made it appear more like a proper shopping site.
+
+Profile Page Styling: Using a vertically collapsing accordion, I made the profile page a bit more visually interesting
